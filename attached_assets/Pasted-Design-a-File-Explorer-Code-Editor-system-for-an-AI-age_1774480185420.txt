@@ -1,0 +1,146 @@
+Design a File Explorer + Code Editor system for an AI agent IDE.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only implement the File Explorer panel and Code Editor
+- This UI must appear ONLY when "Library" button/tab is clicked
+- If Library tab is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Library" button
+- File Explorer + Editor panel opens inside workspace
+- No page reload, no redirect
+- Only main panel updates
+
+---
+
+LAYOUT STRUCTURE:
+
+LEFT SIDE → FILE EXPLORER  
+RIGHT SIDE → CODE EDITOR (Monaco)
+
+Resizable divider between both panels
+
+---
+
+FILE EXPLORER (LEFT PANEL):
+
+- Tree structure (like GitHub/Replit)
+- Expand/collapse folders
+- Icons for file types
+
+---
+
+FEATURES (MUST HAVE):
+
+1. Create:
+- New File
+- New Folder
+
+2. File Actions:
+- Rename
+- Delete
+- Duplicate
+
+3. Upload / Download:
+- Upload file
+- Download file
+
+4. Drag & Drop:
+- Move files into folders
+
+5. Context Menu (Right Click):
+- New file
+- New folder
+- Rename
+- Delete
+
+---
+
+FOLDER STRUCTURE:
+
+- Nested folders allowed
+- Click folder → expand
+- Click file → open in editor
+
+---
+
+CODE EDITOR (RIGHT PANEL):
+
+- Integrate Monaco Editor (VS Code style)
+
+Features:
+- Syntax highlighting
+- Auto-complete
+- Line numbers
+- Multi-language support (JS, HTML, CSS, JSON)
+
+---
+
+EDITOR UX:
+
+- Tabs for open files
+- Switch between files
+- Close tab button (×)
+- Save indicator (● unsaved)
+
+---
+
+TOP BAR (EDITOR):
+
+- File name
+- Save button (💾)
+- Format code button (optional)
+
+---
+
+UX FEATURES:
+
+- Auto-save (optional)
+- Smooth file open animation
+- Highlight active file
+- Keyboard shortcuts (Ctrl+S)
+
+---
+
+VISUAL DESIGN:
+
+- Dark theme (match app)
+- Clean minimal dev tool style
+- Subtle borders + spacing
+
+---
+
+RESIZABLE PANELS:
+
+- Drag divider between:
+  → File Explorer & Editor
+- Set min/max width
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when Library tab is active
+- Switching tab → revert to previous panel
+- Do NOT affect other panels
+
+---
+
+AVOID:
+
+- Overloading UI
+- Complex file system logic initially
+- Changing global layout
+
+---
+
+GOAL:
+
+- Feels like real IDE (Replit / VS Code level)
+- User can manage files easily
+- Powerful + smooth coding experience

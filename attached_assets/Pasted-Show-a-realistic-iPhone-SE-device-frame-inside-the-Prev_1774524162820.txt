@@ -1,0 +1,114 @@
+Show a realistic iPhone SE device frame inside the Preview panel when "iPhone SE" is selected.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Only modify the Preview panel device view
+- This frame must appear ONLY when "iPhone SE" is selected
+- If another device is selected → replace this frame
+
+---
+
+CORE FLOW:
+
+- User clicks Monitor icon → selects "iPhone SE"
+- Preview panel updates
+- Show full realistic iPhone SE frame (like reference image)
+
+---
+
+FRAME DESIGN (MATCH IMAGE EXACTLY):
+
+- Use full device mockup style (not simple border)
+
+---
+
+TOP SECTION:
+
+- Add front camera (small circle)
+- Add horizontal speaker slot (center)
+- Place both inside top bezel area
+
+---
+
+SIDE DETAILS:
+
+- Add side buttons:
+  → Volume buttons (left side)
+  → Power button (right side)
+
+- Metallic edge look with subtle highlights
+
+---
+
+BOTTOM SECTION:
+
+- Add circular Home button
+- Center aligned
+- Add slight inner shadow for realism
+
+---
+
+FRAME BODY:
+
+- Outer frame:
+  → Metallic dark grey / black
+  → Smooth rounded edges
+  → Realistic thickness
+
+- Add depth:
+  → Outer shadow (floating effect)
+  → Inner shadow (screen inset feel)
+
+---
+
+SCREEN AREA:
+
+- Inner screen rectangle (white/preview area)
+- Proper padding from borders
+- Maintain iPhone SE aspect ratio
+
+---
+
+LEFT-RIGHT BORDER:
+
+- Ensure full visible bezels on both sides
+- No clipping or missing edges
+- Equal thickness
+
+---
+
+BACKGROUND:
+
+- Dark gradient background (like image)
+- Center device on screen
+
+---
+
+VISUAL QUALITY:
+
+- Photorealistic feel
+- Smooth curves
+- No flat UI look
+- No cartoon style
+
+---
+
+ANIMATION:
+
+- On selection:
+  → smooth fade + scale in
+- No jump or distortion
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Show ONLY for iPhone SE selection
+- Remove frame when switching to Full size / other devices
+
+---
+
+GOAL:
+
+- Device looks exactly like real iPhone SE (as shown in reference image)
+- Premium, realistic preview experience

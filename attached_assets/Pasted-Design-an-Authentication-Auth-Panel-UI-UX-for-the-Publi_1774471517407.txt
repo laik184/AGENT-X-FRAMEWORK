@@ -1,0 +1,136 @@
+Design an Authentication (Auth) Panel UI/UX for the Publishing section of an AI agent IDE.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Auth panel UI
+- This UI must appear ONLY when "Auth" button/tab is clicked
+- If Auth tab is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Auth" tab/button
+- Only main workspace panel updates
+- Auth panel opens inside Publishing section
+- No page reload, no redirect
+
+---
+
+TOP SECTION:
+
+- Title: "Authentication"
+- Subtitle: "Manage access and login methods for your app"
+
+---
+
+MAIN SECTIONS:
+
+---
+
+1. AUTH STATUS:
+
+- Show:
+  - Auth Enabled / Disabled (toggle switch)
+- Small description:
+  → "Enable authentication to restrict access"
+
+---
+
+2. LOGIN METHODS (PROVIDERS):
+
+- Show available providers as toggle cards:
+
+  - Email & Password (default ON)
+  - Google
+  - GitHub
+  - Apple (optional)
+
+Each provider:
+- Icon + name
+- Enable/Disable toggle
+
+---
+
+3. ACCESS CONTROL:
+
+- Who can access:
+  - Public (no login required)
+  - Authenticated users only
+
+- Optional:
+  - Role-based access (Admin / User)
+
+---
+
+4. USER MANAGEMENT (OPTIONAL):
+
+- List of users:
+  - Email
+  - Role
+  - Status (Active / Blocked)
+
+- Actions:
+  - Add user
+  - Remove user
+  - Change role
+
+---
+
+5. SESSION SETTINGS:
+
+- Session timeout (dropdown)
+  → 30 min / 1 hour / 24 hours
+
+- Auto logout toggle
+
+---
+
+UX FEATURES:
+
+- Smooth toggle switches
+- Instant feedback (ON/OFF state)
+- Confirmation for disabling auth
+- Clean grouping of sections
+
+---
+
+VISUAL DESIGN:
+
+- Card-based layout
+- Rounded corners (12–16px)
+- Dark theme (match app)
+- Minimal, clean SaaS style
+
+---
+
+INTERACTIONS:
+
+- Save changes button
+- Success message:
+  → "Authentication settings updated"
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when Auth tab is active
+- Switching tab → revert to previous UI
+- Do NOT affect other Publishing tabs
+
+---
+
+AVOID:
+
+- Complex setup steps
+- Too many options
+- Exposing sensitive data
+
+---
+
+GOAL:
+
+- User enables auth in 1 click
+- Simple, secure, easy to manage
+- Feels like real SaaS auth system (Firebase / Supabase level)

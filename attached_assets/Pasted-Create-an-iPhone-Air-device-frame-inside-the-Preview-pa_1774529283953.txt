@@ -1,0 +1,119 @@
+Create an iPhone Air device frame inside the Preview panel using the provided reference image.
+
+STRICT RULE:
+- This design must ONLY activate when "iPhone Air" is selected
+- Do NOT change any other part of the app
+- Match the reference image as closely as possible (pixel-accurate)
+
+---
+
+REFERENCE UNDERSTANDING:
+
+- Use the uploaded image as the exact visual guide
+- Replicate proportions, spacing, and styling precisely
+
+---
+
+FRAME STRUCTURE:
+
+- Tall, slim modern iPhone design
+- Smooth rounded corners (large radius)
+- Ultra-thin bezels on all sides (equal thickness)
+
+---
+
+TOP SECTION (IMPORTANT):
+
+- Add Dynamic Island (pill shape)
+  → centered horizontally
+  → small rounded black pill
+
+- Inside pill:
+  → slight glossy effect
+  → subtle camera lens highlight
+
+---
+
+SCREEN AREA:
+
+- Full edge-to-edge display
+- Minimal padding from frame
+- White/blank screen area (like image)
+
+---
+
+FRAME BODY:
+
+- Color: matte black / deep graphite
+- Finish: soft metallic + glass blend
+
+- Add subtle gradient:
+  → edges slightly lighter
+  → center darker
+
+---
+
+EDGE DETAIL:
+
+- Add thin metallic rim highlight
+  → gives premium hardware feel
+
+- Corners must be very smooth (no sharp edges)
+
+---
+
+SIDE BUTTONS:
+
+- Left:
+  → volume buttons (2 slim lines)
+
+- Right:
+  → power button
+
+- Keep buttons very subtle and thin
+
+---
+
+DEPTH & REALISM:
+
+- Add soft outer shadow (floating effect)
+- Add inner screen shadow (inset feel)
+
+---
+
+GLASS EFFECT:
+
+- Add very light top reflection
+  → opacity 2–4%
+  → only upper screen area
+
+---
+
+BACKGROUND:
+
+- Dark gradient (black → deep blue tone)
+- Device centered
+
+---
+
+ANIMATION (OPTIONAL):
+
+- Smooth fade + scale when switching to iPhone Air
+- No jump or distortion
+
+---
+
+IMPORTANT CONDITIONS:
+
+- No home button
+- No thick bezels
+- No extra UI inside screen
+- Keep everything minimal and premium
+
+---
+
+GOAL:
+
+- Frame must look identical to the reference image
+- Ultra-realistic modern iPhone feel
+- Premium Apple-level design quality

@@ -1,0 +1,120 @@
+Design a Publishing (Deploy) Panel UI/UX for an AI agent IDE, inspired by a professional SaaS deployment interface.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Publishing panel UI
+- This panel must appear ONLY when "Publishing" button/tab is clicked
+- If Publishing tab is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Publishing" tab/button
+- Only main workspace panel updates
+- Publishing panel opens inside existing IDE layout
+- No page reload, no redirect
+
+---
+
+TOP NAV (TABS):
+
+- Horizontal tabs:
+  - Overview (active)
+  - Logs
+  - Resources
+  - Domains
+  - Manage
+
+- Active tab highlighted
+- Smooth tab switching (no layout change)
+
+---
+
+ACTION BUTTONS (TOP):
+
+- Primary button:
+  → "Republish" (highlighted)
+
+- Secondary buttons:
+  → "Adjust settings"
+  → "Run security scan"
+
+- Clean alignment (left or right)
+
+---
+
+MAIN CONTENT (PRODUCTION SECTION):
+
+Section Title:
+- "Production"
+
+Details:
+
+1. Status:
+   - Show status text (e.g., "Failed to publish")
+   - Add status dot:
+     - Red = failed
+     - Green = success
+     - Yellow = processing
+
+2. Visibility:
+   - Public / Private label
+
+3. Domain:
+   - Show project URL (clickable or copy icon)
+
+4. Type:
+   - Show plan (e.g., Autoscale, RAM, CPU details)
+   - Optional "Manage" or "See usage" link
+
+---
+
+CARD STYLE:
+
+- Wrap content in a clean container/card
+- Rounded corners (12–16px)
+- Subtle border
+- Dark background
+
+---
+
+UX FEATURES:
+
+- Copy domain button (📋)
+- Hover effects on buttons
+- Smooth tab switching
+- Clean spacing between sections
+
+---
+
+VISUAL STYLE:
+
+- Match existing dark theme
+- Minimal, professional SaaS feel
+- No redesign outside this panel
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when Publishing tab is active
+- Switching tab → revert to original panel
+- Do NOT affect any other UI
+
+---
+
+AVOID:
+
+- Over डिजाइन
+- Too many fields
+- Changing global layout
+
+---
+
+GOAL:
+
+- User clicks Publishing → sees clean deployment panel
+- Feels like real production dashboard
+- बाकी पूरा app untouched रहे

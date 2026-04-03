@@ -1,0 +1,134 @@
+Design a realistic deployment progress UI for the Publishing panel.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Only add UI that appears AFTER clicking "Publish" or "Republish" button
+- Keep existing layout, tabs, and design unchanged
+- This progress UI must appear ONLY during deployment process
+
+---
+
+TRIGGER:
+
+- User clicks "Publish" / "Republish"
+- Show deployment progress bar at top of panel
+- Do NOT show before click
+
+---
+
+PROGRESS FLOW (STEPS):
+
+Display horizontal step progress:
+
+1. Provision
+2. Security Scan
+3. Build
+4. Bundle
+5. Promote
+
+---
+
+STEP STATES:
+
+Each step can have 4 states:
+
+1. Pending (grey)
+2. Running (blue / animated)
+3. Success (green with ✓)
+4. Error (red with warning ⚠️)
+
+---
+
+UI DESIGN:
+
+- Horizontal segmented progress bar
+- Each step = pill/segment
+- Smooth transitions between steps
+
+Example flow:
+- Provision → green ✓
+- Security Scan → green ✓
+- Build → red ⚠️ (if failed)
+- Next steps disabled
+
+---
+
+ANIMATION:
+
+- Active step:
+  → subtle glowing animation
+  → loading pulse or shimmer
+
+- Transition:
+  → smooth color change (grey → blue → green/red)
+
+---
+
+REALISTIC BEHAVIOR:
+
+- Steps complete one-by-one (not all at once)
+- Add small delay between steps (simulate real deploy)
+- Show status text below:
+
+Examples:
+- "Provisioning resources..."
+- "Running security checks..."
+- "Building your app..."
+- "Deployment failed at build step"
+
+---
+
+ERROR HANDLING:
+
+- If step fails:
+  → show red state
+  → stop further steps
+  → show error message
+
+---
+
+SUCCESS STATE:
+
+- All steps green ✓
+- Show message:
+  → "Your app is live 🚀"
+
+---
+
+UX DETAILS:
+
+- Disable Publish button during process
+- Add retry button if failed
+- Smooth fade-in of progress UI
+
+---
+
+STYLE:
+
+- Match existing dark theme
+- Clean, minimal, professional
+- No layout changes
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Show progress UI ONLY after Publish click
+- Hide when not deploying
+- Do NOT affect other panels
+
+---
+
+AVOID:
+
+- Fake instant loading
+- Showing all steps complete at once
+- Over डिजाइन
+
+---
+
+GOAL:
+
+- Feels like real CI/CD deployment pipeline
+- High trust, professional experience
+- Same level as Replit / Vercel deploy UI

@@ -1,0 +1,142 @@
+Design a Security Scan Panel UI/UX for the Publishing section of an AI agent IDE.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Security Scan panel UI
+- This UI must appear ONLY when "Run security scan" button is clicked
+- If this panel is not active → it must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Run security scan" button
+- Only main workspace panel updates
+- Security Scan panel opens inside Publishing section
+- No page reload, no redirect
+
+---
+
+TOP SECTION:
+
+- Title: "Security Scan"
+- Subtitle: "Analyze your app for vulnerabilities"
+
+- Right side:
+  - "Run Scan" button (Primary)
+
+---
+
+SCAN STATUS:
+
+- Show current scan status:
+  - Not started
+  - Scanning (animated)
+  - Completed
+
+- Add progress bar (optional)
+
+---
+
+TABS (INSIDE PANEL):
+
+- Active Issues
+- Hidden Issues
+- Scan Settings
+
+Tabs should be horizontally aligned with smooth switching
+
+---
+
+1. ACTIVE ISSUES:
+
+- List of detected vulnerabilities
+
+Each issue card:
+- Severity badge:
+  - Critical (red)
+  - Medium (yellow)
+  - Low (blue/grey)
+
+- Issue title
+- Short description
+
+Actions:
+- "Fix" button
+- "Hide" button
+
+---
+
+2. HIDDEN ISSUES:
+
+- List of hidden/suppressed issues
+- Option to "Restore" issue
+
+---
+
+3. SCAN SETTINGS:
+
+- Toggle options:
+  - Auto scan (ON/OFF)
+  - Deep scan (ON/OFF)
+
+- Scan frequency:
+  - Manual / Daily / Weekly
+
+---
+
+FIX FLOW:
+
+- Clicking "Fix":
+  → Show loading state
+  → Then mark issue as resolved (green ✓)
+
+---
+
+UX FEATURES:
+
+- Smooth tab switching
+- Real-time scan simulation (issues appear gradually)
+- Clear visual hierarchy
+- Hover effects on issue cards
+
+---
+
+VISUAL DESIGN:
+
+- Dark theme (match app)
+- Card-based issue list
+- Rounded corners (12–16px)
+- Clean spacing
+
+---
+
+EMPTY STATES:
+
+- No issues:
+  → "No vulnerabilities found 🎉"
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when "Run security scan" is clicked
+- Switching tab → revert to previous UI
+- Do NOT affect other Publishing panels
+
+---
+
+AVOID:
+
+- Too many technical details
+- Cluttered layout
+- Hard-to-read issues
+
+---
+
+GOAL:
+
+- User runs scan → sees issues → fixes them easily
+- Clear, actionable, developer-friendly UI
+- Feels like real security dashboard

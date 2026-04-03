@@ -1,0 +1,127 @@
+Design an "Adjust Settings" Panel UI/UX for the Publishing section of an AI agent IDE.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Settings panel UI
+- This UI must appear ONLY when "Adjust settings" button is clicked
+- If Settings panel is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Adjust settings" button
+- Only main workspace panel updates
+- Settings panel opens inside Publishing section
+- No page reload, no redirect
+
+---
+
+TOP SECTION:
+
+- Title: "App Settings"
+- Subtitle: "Configure your production app settings"
+
+---
+
+MAIN SECTIONS:
+
+---
+
+1. ACCESS CONTROL (Who can access your app):
+
+- Toggle options:
+  - Public (anyone can access)
+  - Private (restricted access)
+
+- Optional:
+  - Add allowed users/emails
+
+---
+
+2. GENERAL CONFIGURATION:
+
+- App Name (input field)
+- Environment (Production / Development dropdown)
+- Region (optional dropdown)
+
+---
+
+3. PRODUCTION DATABASE SETTINGS:
+
+- Database status:
+  - Connected / Not Connected
+
+- Fields:
+  - Database URL (masked)
+  - Connection status indicator
+
+- Button:
+  - "Reconnect Database"
+
+---
+
+4. PRODUCTION APP SECRETS:
+
+- List of secret keys (masked values: ******)
+
+Each item:
+- Key name
+- Hidden value
+
+Actions:
+- Add Secret
+- Edit
+- Delete
+
+---
+
+UX FEATURES:
+
+- Toggle switches (smooth ON/OFF)
+- Input validation
+- Mask sensitive data (secrets, DB URL)
+- Copy button for keys (optional)
+- Confirmation before deleting secrets
+
+---
+
+VISUAL DESIGN:
+
+- Card-based layout for each section
+- Rounded corners (12–16px)
+- Clean spacing
+- Dark theme (match app)
+
+---
+
+INTERACTIONS:
+
+- Save button (bottom or top-right)
+- Show success message:
+  → "Settings updated successfully"
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when "Adjust settings" is clicked
+- Switching away → revert to previous UI
+- Do NOT affect other Publishing tabs
+
+---
+
+AVOID:
+
+- Overcomplicated forms
+- Too many inputs
+- Exposing sensitive data
+
+---
+
+GOAL:
+
+- User configures settings in under 2 minutes
+- Clear, secure, easy-to-use UI
+- Feels like real production settings panel (Vercel / AWS level)

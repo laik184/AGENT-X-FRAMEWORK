@@ -1,0 +1,114 @@
+Build a professional GitHub import flow UI (similar to Replit / Vercel).
+
+USER ACTION:
+When user clicks "Import from GitHub" button → open a RIGHT SIDE SLIDING PANEL (NOT full page, NOT basic popup).
+
+-------------------------------------
+
+PANEL DESIGN:
+
+- Position: Right side slide-in
+- Width: 420px (fixed)
+- Height: 100%
+- Background: #0d1117 (dark theme)
+- Border-left: 1px solid #30363d
+- Shadow: subtle soft shadow for depth
+- Animation: smooth slide-in (300ms ease)
+
+-------------------------------------
+
+FLOW STRUCTURE (MULTI-STEP):
+
+STEP 1: CONNECT GITHUB
+
+- Title: "Connect GitHub"
+- Subtitle: "Import your repository to start building"
+- Button: "Connect with GitHub"
+- Button style:
+  → Dark (#161b22)
+  → Border: #30363d
+  → Hover: slightly lighter
+
+-------------------------------------
+
+STEP 2: LOADING STATE
+
+- Show loading spinner
+- Text: "Fetching your repositories..."
+- Add skeleton list (3–5 fake repo rows)
+- Smooth transition from previous step
+
+-------------------------------------
+
+STEP 3: REPOSITORY LIST
+
+- Top: Search input field
+  → Placeholder: "Search repositories..."
+
+- Below: Scrollable repo list
+
+Each repo item:
+- Repo name (bold)
+- Visibility badge (Public / Private)
+- Hover effect: background highlight
+- Click → select repo
+
+-------------------------------------
+
+STEP 4: IMPORT SETTINGS
+
+- Title: "Import Settings"
+
+Fields:
+- Repository name (read-only)
+- Branch dropdown (default: main)
+- Project name input (editable)
+
+- Button: "Import Project"
+
+-------------------------------------
+
+STEP 5: IMPORT PROGRESS
+
+- Show progress steps:
+  → Cloning repository
+  → Installing dependencies
+  → Setting up environment
+
+- Add progress bar or animated loader
+- Disable interactions
+
+-------------------------------------
+
+STEP 6: SUCCESS SCREEN
+
+- Icon: success checkmark
+- Text: "Project Imported Successfully"
+- Button: "Open Project"
+
+-------------------------------------
+
+UI RULES:
+
+- DO NOT change layout structure
+- Use consistent spacing (16–20px padding)
+- Border radius: 12px (modern SaaS look)
+- Font: clean sans-serif
+- Transitions between steps must be smooth (fade or slide)
+
+-------------------------------------
+
+INTERACTIONS:
+
+- Clicking repo → instantly moves to settings step
+- Clicking Import → triggers loading step
+- All steps must feel connected (no reload feeling)
+
+-------------------------------------
+
+GOAL:
+
+- Must look like a real developer tool (Replit / Vercel level)
+- Clean, premium, production-ready UI
+- No basic modal look
+- No abrupt transitions

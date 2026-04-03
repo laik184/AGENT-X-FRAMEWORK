@@ -1,0 +1,125 @@
+Fix the tablet frame to perfectly match a premium OnePlus-style device.
+
+STRICT RULE:
+- Do NOT redesign layout
+- Do NOT change aspect ratio (16:9)
+- Only fix alignment, depth, and realism
+
+---
+
+1. POSITION FIX (CRITICAL):
+
+- Center the device perfectly:
+  → horizontally centered
+  → vertically centered
+
+- Add equal spacing:
+  → top = bottom (no downward shift)
+
+---
+
+2. FRAME PROPORTION:
+
+- Maintain equal bezel thickness on all sides
+- Medium thickness (balanced, not thin like phone)
+
+---
+
+3. TOP BEZEL + CAMERA FIX (IMPORTANT):
+
+- Make top bezel clearly visible (slightly thicker illusion)
+
+- Camera:
+  → small circular punch hole
+  → perfectly centered horizontally
+  → visible but subtle (not faded)
+
+- Add slight shadow under top edge:
+  → creates separation from screen
+
+---
+
+4. EDGE DEPTH (CRITICAL REALISM):
+
+- Apply asymmetrical lighting:
+
+  → Left edge:
+     slightly darker
+
+  → Right edge:
+     slightly brighter
+
+- Add thin highlight line on outer edge (1px)
+
+---
+
+5. FRAME MATERIAL:
+
+- Matte black / graphite metal
+- Subtle gradient:
+  → top slightly lighter
+  → middle normal
+  → bottom slightly darker
+
+- NO flat color
+
+---
+
+6. SCREEN INSET:
+
+- Screen must look slightly inside frame
+- Add inner shadow around edges
+
+---
+
+7. GLASS EFFECT:
+
+- Add very soft top reflection:
+  → diagonal gradient
+  → opacity 3–5%
+
+---
+
+8. BOTTOM DEPTH:
+
+- Add soft shadow near bottom frame
+- Avoid flat bottom edge
+
+---
+
+9. SHADOW (FLOAT EFFECT):
+
+- Add soft shadow below device
+- Wide blur, low opacity
+- Device should look slightly lifted
+
+---
+
+10. BACKGROUND:
+
+- Dark gradient:
+  → black → deep blue
+
+- Add vignette:
+  → darker corners
+
+---
+
+11. REMOVE THESE ERRORS:
+
+❌ device shifted down  
+❌ invisible camera  
+❌ flat edges  
+❌ no depth  
+❌ uneven lighting  
+❌ plastic look  
+
+---
+
+FINAL GOAL:
+
+- Perfectly centered device
+- Clear top camera visibility
+- Strong premium metal frame feel
+- Balanced lighting and depth
+- Looks like real product render

@@ -1,0 +1,132 @@
+Design a Domain Management & Connect Panel UI/UX for the Publishing section of an AI agent IDE.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Domains panel UI
+- This UI must appear ONLY when "Domains" tab is clicked
+- If Domains tab is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Domains" tab
+- Only main workspace panel updates
+- Domain panel opens inside Publishing section
+- No page reload, no redirect
+
+---
+
+TOP SECTION:
+
+- Title: "Domains"
+- Subtitle: "Connect your custom domain to your app"
+
+- Right side:
+  - "Add Domain" button (Primary)
+
+---
+
+ADD DOMAIN FLOW:
+
+When user clicks "Add Domain":
+
+- Show input field:
+  → "Enter your domain (e.g., yoursite.com)"
+
+- Button:
+  → "Connect Domain"
+
+---
+
+DOMAIN LIST (BELOW):
+
+- Show connected domains as cards/list:
+
+Each item:
+- Domain name (e.g., yoursite.com)
+- Status badge:
+  - Connected (green)
+  - Pending (yellow)
+  - Error (red)
+
+- Actions:
+  - Copy DNS
+  - Remove domain
+  - Retry (if failed)
+
+---
+
+DNS INSTRUCTIONS (IMPORTANT):
+
+When domain is added:
+
+- Show DNS setup box:
+
+Example:
+- Type: CNAME
+- Name: www
+- Value: your-app.replit.app
+
+- Add "Copy" button for each field
+
+- Add note:
+  → "Update these records in your domain provider"
+
+---
+
+VERIFICATION STATUS:
+
+- Show live status:
+  - "Waiting for DNS propagation..."
+  - "Domain connected successfully"
+
+---
+
+UX FEATURES:
+
+- Step-by-step guidance (Add → Configure DNS → Verify)
+- Smooth transitions
+- Copy buttons for easy setup
+- Status updates dynamically
+
+---
+
+VISUAL DESIGN:
+
+- Dark theme (match app)
+- Clean cards
+- Rounded inputs
+- Subtle borders
+
+---
+
+EMPTY STATE:
+
+- If no domain:
+  → "No domains connected yet"
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when Domains tab is active
+- Switching tab → revert to previous UI
+- Do NOT affect other Publishing tabs
+
+---
+
+AVOID:
+
+- Complex instructions
+- Too many fields
+- Confusing flow
+
+---
+
+GOAL:
+
+- User connects domain in under 2 minutes
+- Clear, guided, no confusion
+- Feels like Vercel / Netlify domain setup UI

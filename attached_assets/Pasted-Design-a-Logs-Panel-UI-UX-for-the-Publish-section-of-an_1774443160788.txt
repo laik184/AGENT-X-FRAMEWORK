@@ -1,0 +1,123 @@
+Design a Logs Panel UI/UX for the Publish section of an AI agent IDE. 
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Logs panel UI
+- This UI must appear ONLY when "Logs" tab is clicked inside Publish panel 
+- If Logs tab is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Logs" tab
+- Only main workspace panel updates
+- Logs panel opens inside Publish section 
+- No page reload, no redirect
+
+---
+
+TOP SECTION:
+
+- Title: "Deployment Logs"
+- Right side:
+  - Filter dropdown (All / Errors / Warnings / Info)
+  - Clear Logs button (🧹)
+  - Download Logs button (⬇️ optional)
+
+---
+
+LOGS VIEW (MAIN AREA):
+
+- Scrollable terminal-style log container
+- Monospace font (JetBrains Mono / Fira Code)
+- Each log entry in a row
+
+---
+
+LOG FORMAT:
+
+Each log line should show:
+
+- Timestamp (e.g., 12:45:03)
+- Log type:
+  - INFO (grey/blue)
+  - SUCCESS (green)
+  - WARNING (yellow)
+  - ERROR (red)
+
+- Message text
+
+Example:
+[12:45:03] INFO: Starting deployment...
+[12:45:05] SUCCESS: Resources provisioned
+[12:45:10] ERROR: Build failed due to missing dependency
+
+---
+
+VISUAL DESIGN:
+
+- Dark background
+- Alternating row background (subtle)
+- Colored text based on log type
+- Clean spacing
+
+---
+
+UX FEATURES:
+
+- Auto-scroll to latest logs
+- Pause auto-scroll toggle (optional)
+- Search logs input (top)
+- Copy button for each log line (optional)
+
+---
+
+INTERACTIONS:
+
+- Clicking filter updates visible logs
+- Clear button empties logs
+- Logs update in real-time (line-by-line)
+
+---
+
+LOADING / EMPTY STATE:
+
+- If no logs:
+  → "No logs yet"
+
+- While deploying:
+  → Logs appear gradually
+
+---
+
+STYLE:
+
+- Match existing dark theme
+- Minimal, clean, developer-friendly
+- No redesign outside this panel
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when Logs tab is active
+- Switching tab → revert to previous UI
+- Do NOT affect other Publishing tabs
+
+---
+
+AVOID:
+
+- Cluttered layout
+- Too many controls
+- Hard-to-read text
+
+---
+
+GOAL:
+
+- Logs are easy to read and scan
+- Feels like real deployment logs
+- Same level as Replit / Vercel logs UI

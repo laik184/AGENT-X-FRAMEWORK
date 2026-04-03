@@ -1,0 +1,97 @@
+Design the next-step interface for an AI agent import system after a user selects an import option (GitHub, Bitbucket, Figma, Zip File, Vercel, Empty Project).
+
+STRICT RULE:
+- Keep the same layout and style as the main app
+- Do NOT redesign the entire app
+- Only design the import detail screen
+
+STYLE:
+- Dark theme, minimal, clean SaaS UI
+- Subtle borders, soft shadows
+- Rounded inputs (10-12px)
+- Clean typography (Inter style)
+
+COMMON LAYOUT (ALL IMPORT TYPES):
+- Top: Title (e.g., "Import from GitHub")
+- Small description text below
+- Optional "Docs" button (top-right or below title)
+- Divider line
+
+- Input section:
+  - Main input field (based on type)
+  - Placeholder text
+  - Secondary option text ("or select from your account")
+
+- User/account info section (if applicable)
+- Settings section (like privacy, options)
+
+- Bottom:
+  - Primary action button (Import / Connect / Upload)
+  - Full-width button, slightly glowing
+
+UX DETAILS:
+- Smooth spacing between sections
+- Focus states on inputs
+- Button hover + click animation
+- Clean alignment, no clutter
+
+---
+
+SPECIFIC VARIATIONS:
+
+1. GitHub / Bitbucket:
+- Input: Repository URL field
+- Option: "Or select from your account"
+- Show user name (Owner)
+- Privacy toggle:
+  - Public
+  - Private (default selected)
+- Bottom button: "Import from GitHub"
+
+---
+
+2. Figma Design:
+- Input: Figma file URL
+- Option: "Connect your Figma account"
+- Show file preview (optional)
+- Button: "Import Design"
+
+---
+
+3. Zip File:
+- Drag & Drop upload box
+- Text: "Upload your .zip file"
+- File preview after upload
+- Button: "Upload & Import"
+
+---
+
+4. Vercel:
+- Connect Vercel account
+- Show project list
+- Select project option
+- Button: "Import from Vercel"
+
+---
+
+5. Empty Project:
+- Simple form:
+  - Project name input
+  - Template select (optional)
+- Button: "Create Project"
+
+---
+
+VIBE:
+- Clean, developer-friendly
+- Feels like Replit but more refined
+- Fast, distraction-free
+
+AVOID:
+- Over डिजाइन
+- Too many fields
+- Copying exact UI
+
+GOAL:
+- Make each import flow simple, clear, and fast
+- User should complete action in under 10 seconds

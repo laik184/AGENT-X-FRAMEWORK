@@ -1,0 +1,122 @@
+Design a Manage Panel UI/UX for the Publishing section of an AI agent IDE.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Manage panel UI
+- This UI must appear ONLY when "Manage" tab is clicked
+- If Manage tab is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Manage" tab
+- Only main workspace panel updates
+- Manage panel opens inside Publishing section
+- No page reload, no redirect
+
+---
+
+TOP SECTION:
+
+- Title: "Manage Application"
+- Subtitle: "Control and monitor your deployed app"
+
+---
+
+MAIN SECTIONS:
+
+1. RESOURCE USAGE:
+
+- Show compact cards:
+  - CPU usage (%)
+  - Memory usage (GB / %)
+
+- Add progress bars:
+  - Green (normal)
+  - Yellow (medium)
+  - Red (high usage)
+
+---
+
+2. APP STATUS:
+
+- Show current status:
+  - Running (green)
+  - Stopped (grey)
+  - Error (red)
+
+- Show:
+  - Last deployed time
+  - Uptime
+
+---
+
+3. ACTION BUTTONS:
+
+- Restart App (⟳)
+- Shutdown App (⏻)
+- Redeploy App (🚀)
+
+- Buttons style:
+  - Primary (Restart / Redeploy)
+  - Danger (Shutdown → red)
+
+---
+
+4. SETTINGS (OPTIONAL):
+
+- Toggle:
+  - Auto-scaling (ON/OFF)
+  - Public / Private
+
+---
+
+UX FEATURES:
+
+- Confirmation modal before shutdown:
+  → "Are you sure you want to stop the app?"
+
+- Smooth button feedback
+- Status updates in real-time
+
+---
+
+VISUAL DESIGN:
+
+- Dark theme (match app)
+- Card-based layout
+- Rounded corners (12–16px)
+- Clean spacing
+
+---
+
+EMPTY / EDGE STATES:
+
+- If app not deployed:
+  → "No active deployment"
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when Manage tab is active
+- Switching tab → revert to previous UI
+- Do NOT affect other Publishing tabs
+
+---
+
+AVOID:
+
+- Too many controls
+- Confusing layout
+- Over डिजाइन
+
+---
+
+GOAL:
+
+- User can control app in 1–2 clicks
+- Clear status + easy actions
+- Feels like real cloud control panel (AWS / Vercel level)

@@ -1,0 +1,70 @@
+You are a senior frontend engineer working on a TypeScript-based React project. Your component `ChatPanel.tsx` needs to automatically trigger specific animations based on the tool/action being executed.
+
+---
+
+## 🎯 **Component Context**
+
+* File: `client/src/components/ChatPanel.tsx`
+* Purpose: Display real-time actions with corresponding animations (e.g., thinking, writing, installing, running, restarting).
+
+---
+
+## 🧠 **Your Task**
+
+1. **Detect Action Type**:
+
+   * Listen to incoming action events (e.g., from WebSocket or props).
+   * Determine which tool/action is being executed (e.g., `console.run`, `file.write`, `package.install`).
+
+2. **Map Actions to Animations**:
+
+   * Use an `iconMap` to determine which icon/animation corresponds to each action.
+   * For example:
+
+     ```typescript
+     const iconMap: Record<string, string> = {
+       'file.read': '📁',
+       'file.write': '📁',
+       'console.run': '💻',
+       'package.install': '📦',
+       'server.restart': '🔄',
+       'analysis.think': '🧠',
+       'deploy.publish': '🚀'
+     };
+     ```
+
+3. **Trigger Animations**:
+
+   * When an action starts, show the corresponding animation (e.g., spinning icon for `package.install`, typing animation for `file.write`).
+
+4. **Update State**:
+
+   * Manage component state to track which action is currently running and update the UI accordingly.
+
+5. **Handle Completion**:
+
+   * Once an action is completed, update the UI to show a success or done state.
+
+---
+
+## 📂 **Output Requirements**
+
+* **Detect and map actions** from backend events to frontend animations.
+* **Ensure real-time updates** in the `ChatPanel.tsx` component.
+* **Use TypeScript best practices** for type safety and maintainability.
+
+---
+
+## 🔧 **Implementation Steps**
+
+1. **Set up a state** in `ChatPanel.tsx` to track the current action.
+2. **Subscribe to action events** (via WebSocket or props).
+3. **Use `iconMap`** to decide which icon/animation to display.
+4. **Render the action item** with the corresponding animation.
+5. **Update state** when the action completes to stop the animation or show a completion status.
+
+---
+
+## 🚀 **Final Prompt**
+
+Use this prompt to guide your implementation of real-time action-triggered animations in your TypeScript `ChatPanel.tsx` component. If you need code snippets or further details, just let me know! 🚀

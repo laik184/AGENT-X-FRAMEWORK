@@ -1,0 +1,121 @@
+Design a Resources Analytics Panel UI/UX for the Publishing section of an AI agent IDE.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify layout, sidebar, chat panel, or other tabs
+- Only design the Resources panel UI
+- This UI must appear ONLY when "Resources" tab is clicked
+- If Resources tab is not active → this UI must NOT be visible
+
+---
+
+CORE FLOW:
+
+- User clicks "Resources" tab
+- Only main workspace panel updates
+- Resources analytics panel opens inside Publishing section
+- No page reload, no redirect
+
+---
+
+TOP SECTION:
+
+- Title: "Resources Usage"
+- Right side:
+  - Time range selector (Last 5 min / 1 hr / 24 hr)
+  - Refresh button (⟳)
+
+---
+
+MAIN ANALYTICS (GRAPHS):
+
+1. CPU Utilization:
+
+- Line chart (real-time style)
+- X-axis: Time
+- Y-axis: CPU usage (%)
+- Smooth animated line
+- Highlight spikes
+
+- Label:
+  → "CPU Utilization"
+
+---
+
+2. Memory Utilization:
+
+- Line chart or area chart
+- X-axis: Time
+- Y-axis: Memory usage (MB/GB or %)
+
+- Label:
+  → "Memory Utilization"
+
+---
+
+METRICS CARDS (TOP OR ABOVE GRAPHS):
+
+- Current CPU Usage (e.g., 32%)
+- Current Memory Usage (e.g., 1.2GB / 4GB)
+
+Cards style:
+- Small compact cards
+- Rounded corners
+- Subtle glow
+
+---
+
+UX FEATURES:
+
+- Graph updates smoothly (simulate real-time)
+- Hover on graph:
+  → show exact value + timestamp
+- Toggle between CPU / Memory focus (optional)
+- Responsive layout
+
+---
+
+VISUAL DESIGN:
+
+- Dark theme (match app)
+- Minimal, clean SaaS dashboard
+- Subtle grid lines in graphs
+- Smooth animations
+
+---
+
+LOADING STATE:
+
+- Show skeleton graph loader before data loads
+- Smooth fade-in
+
+---
+
+EMPTY STATE:
+
+- If no data:
+  → "No resource data available"
+
+---
+
+IMPORTANT CONDITIONS:
+
+- Only visible when Resources tab is active
+- Switching tab → revert to previous UI
+- Do NOT affect other Publishing tabs
+
+---
+
+AVOID:
+
+- Cluttered charts
+- Too many metrics
+- Hard-to-read graphs
+
+---
+
+GOAL:
+
+- User instantly understands CPU & Memory usage
+- Feels like real cloud dashboard (AWS / Vercel level)
+- Clean, fast, professional experience

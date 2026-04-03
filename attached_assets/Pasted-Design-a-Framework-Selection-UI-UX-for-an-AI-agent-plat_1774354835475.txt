@@ -1,0 +1,112 @@
+Design a Framework Selection UI/UX for an AI agent platform.
+
+STRICT RULE:
+- Do NOT change any other part of the app
+- Do NOT modify existing layout, navbar, sidebar, colors, or UI
+- Only design the framework selection and framework-specific pages
+- When a framework button is clicked, ONLY the corresponding framework page should open
+- No other UI or page should be changed, edited, or redesigned
+
+CORE FLOW:
+- User clicks "Create Project" or "Templates"
+- Framework selection screen opens
+- User selects a category (Android, iOS, Website, Backend)
+- Then selects a framework
+- Clicking a framework button MUST open its dedicated setup/start page
+
+STYLE:
+- Match existing app design (no full redesign)
+- Dark theme, minimal, clean SaaS feel
+- Rounded cards (12-16px)
+- Subtle glow and hover animations
+
+---
+
+MAIN SCREEN (CATEGORY SELECTION):
+
+Show 4 main cards:
+1. Android
+2. iOS
+3. Website
+4. Backend
+
+Each card:
+- Icon + title + short description
+- Hover glow effect
+- Click → opens framework list page ONLY
+
+---
+
+FRAMEWORK LIST PAGES:
+
+1. ANDROID FRAMEWORKS:
+- Native Android (Java/Kotlin)
+- Flutter
+- React Native
+- Kotlin Multiplatform
+
+2. iOS FRAMEWORKS:
+- Swift (Native iOS)
+- Flutter
+- React Native
+- SwiftUI
+
+3. WEBSITE FRAMEWORKS:
+- HTML/CSS/JS (Vanilla)
+- React.js
+- Next.js
+- Vue.js
+- Angular
+
+4. BACKEND FRAMEWORKS:
+- Node.js (Express)
+- NestJS
+- Django
+- Flask
+- Spring Boot
+
+---
+
+UI FOR FRAMEWORK LIST:
+- Grid layout (2–3 columns desktop, 1 column mobile)
+- Each framework as a card:
+  - Name
+  - Short description
+  - "Select" button
+
+IMPORTANT UX RULE:
+- Clicking any framework card or "Select" button MUST open ONLY that framework’s setup page
+- No other UI changes should happen
+
+---
+
+FRAMEWORK PAGE (AFTER CLICK):
+
+Layout:
+- Title: "Start with [Framework Name]"
+- Small description
+- Options:
+  - Project name input
+  - Template choice (optional)
+- Primary button: "Create Project"
+
+---
+
+UX FEATURES:
+- Smooth transitions between pages
+- Back button (top-left)
+- Search frameworks
+- Hover + click animations
+
+---
+
+AVOID:
+- Changing anything outside this flow
+- Editing existing app UI
+- Adding extra unnecessary features
+
+---
+
+GOAL:
+- User clicks framework → directly lands on its setup page
+- Everything else remains exactly the same
